@@ -32,6 +32,9 @@
                             <constraint firstItem="0vo-n8-fJs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="200" id="a9M-0F-GzO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="launchPhotoView" destination="0vo-n8-fJs" id="gwO-Vc-x9L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
