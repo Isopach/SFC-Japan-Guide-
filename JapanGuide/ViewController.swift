@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Menu_Title: UILabel!
     @IBOutlet weak var donatePhoto: UIImageView!
+    @IBAction func RestaurantPage(sender: UIButton) {
+        self.performSegueWithIdentifier("Restaurant", sender: self)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
