@@ -82,6 +82,10 @@
                                     <action selector="Restaurant_Etiquette:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Y2-0f-7Cg"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="hG7-2j-gkj" customClass="RestaurantEtiquette" customModule="JapanGuide" customModuleProvider="target">
+                                <rect key="frame" x="76" y="104" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -216,6 +220,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cP5-v6-UHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1145" y="1089"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kIa-mT-nhy">
@@ -226,11 +231,30 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Eug-v9-b18" kind="relationship" relationship="rootViewController" id="oBh-qR-rZU"/>
+                        <segue destination="FYY-hD-HPZ" kind="relationship" relationship="rootViewController" id="oBh-qR-rZU"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAH-Oa-g6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Pz-vO-Xqe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FYY-hD-HPZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="HVa-oz-AHp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0vm-XZ-fg7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Eug-v9-b18" kind="relationship" relationship="rootViewController" id="9JJ-9L-hqf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UgR-kg-b8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="990"/>
         </scene>
     </scenes>
     <resources>
