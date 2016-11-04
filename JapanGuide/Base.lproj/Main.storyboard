@@ -191,54 +191,6 @@
             </objects>
             <point key="canvasLocation" x="1139" y="153"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="hBD-Jz-edC">
-            <objects>
-                <tableViewController id="Eug-v9-b18" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Ar-dU-28N">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8Xu-yf-uPf">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Xu-yf-uPf" id="Kpf-kb-gl1">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Eug-v9-b18" id="row-5c-ehV"/>
-                            <outlet property="delegate" destination="Eug-v9-b18" id="YTp-VM-nJj"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="dJg-vE-phf"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cP5-v6-UHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1145" y="1089"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6Pz-vO-Xqe">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FYY-hD-HPZ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="HVa-oz-AHp"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0vm-XZ-fg7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Eug-v9-b18" kind="relationship" relationship="rootViewController" id="9JJ-9L-hqf"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UgR-kg-b8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1790" y="990"/>
-        </scene>
         <!--Restaurant Etiquette-->
         <scene sceneID="Te9-Xb-jp7">
             <objects>
@@ -264,7 +216,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZA-BT-gns">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZA-BT-gns">
                                 <rect key="frame" x="49" y="550" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -275,6 +227,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="k2z-VZ-Suh" firstAttribute="top" secondItem="SZA-BT-gns" secondAttribute="bottom" constant="30" id="iEI-WM-mjm"/>
+                            <constraint firstItem="SZA-BT-gns" firstAttribute="leading" secondItem="BGH-fM-m6P" secondAttribute="leadingMargin" constant="20" id="n1o-PC-xBf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JzJ-ve-9iV"/>
