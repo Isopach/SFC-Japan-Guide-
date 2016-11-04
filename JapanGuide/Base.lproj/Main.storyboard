@@ -221,21 +221,6 @@
             <point key="canvasLocation" x="1145" y="1089"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="kIa-mT-nhy">
-            <objects>
-                <navigationController id="Sef-oS-sid" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ak3-RY-Vax">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="FYY-hD-HPZ" kind="relationship" relationship="rootViewController" id="oBh-qR-rZU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NAH-Oa-g6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="6Pz-vO-Xqe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FYY-hD-HPZ" sceneMemberID="viewController">
@@ -254,10 +239,10 @@
             </objects>
             <point key="canvasLocation" x="1790" y="990"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Etiquette-->
         <scene sceneID="Te9-Xb-jp7">
             <objects>
-                <viewController id="tza-6n-SNR" sceneMemberID="viewController">
+                <viewController title="Restaurant Etiquette" id="tza-6n-SNR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J7Q-sN-lQ3"/>
                         <viewControllerLayoutGuide type="bottom" id="k2z-VZ-Suh"/>
