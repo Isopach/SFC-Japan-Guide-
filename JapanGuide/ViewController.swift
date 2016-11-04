@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var donatePhoto: UIImageView!
     @IBAction func RestaurantPage(sender: UIButton) {
         self.performSegueWithIdentifier("Restaurant", sender: self)
+
+    }
+    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
 
     override func viewDidLoad() {

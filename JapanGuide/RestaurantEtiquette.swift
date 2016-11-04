@@ -21,6 +21,7 @@ class RestaurantEtiquette: UIView {
 
     }
     
+   
     
     override func intrinsicContentSize() -> CGSize {
         return CGSize(width: 240, height: 44)
@@ -34,5 +35,5 @@ class RestaurantEtiquette: UIView {
     }
     
 
-
 }
+
