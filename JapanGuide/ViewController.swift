@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
 
+    @IBAction func ButtonB(sender: AnyObject) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "linkTapped:")
