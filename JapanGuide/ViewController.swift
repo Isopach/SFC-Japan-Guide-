@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var donatePhoto: UIImageView!
     @IBAction func RestaurantPage(sender: UIButton) {
         self.performSegueWithIdentifier("Restaurant", sender: self)
-
     }
+    
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
 
@@ -28,8 +28,7 @@ class ViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "linkTapped:")
         self.donatePhoto.addGestureRecognizer(tapGestureRecognizer)
         self.donatePhoto.userInteractionEnabled = true
-        
-        // Handle the text field’s user input through delegate callbacks.
+        //myButton."Restaurant".textAlignment = NSTextAlignment.Center        // Handle the text field’s user input through delegate callbacks.
       
 
     }
