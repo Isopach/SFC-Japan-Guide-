@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LaunchScreen-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController title="LaunchScreen" id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
@@ -20,6 +20,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="0vo-n8-fJs">
                                 <rect key="frame" x="140" y="220" width="320" height="160"/>
+                                <color key="backgroundColor" red="0.38150217001032377" green="0.71654770699111414" blue="0.84483393324607325" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0vo-n8-fJs" secondAttribute="height" multiplier="2:1" id="XPw-7G-w6k"/>
                                 </constraints>
@@ -32,9 +33,6 @@
                             <constraint firstItem="0vo-n8-fJs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="200" id="a9M-0F-GzO"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="launchPhotoView" destination="0vo-n8-fJs" id="gwO-Vc-x9L"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
