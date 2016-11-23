@@ -15,6 +15,7 @@
 		A6957DBD1DB9BACE00FB0B32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6957DBB1DB9BACE00FB0B32 /* LaunchScreen.storyboard */; };
 		A6957DC81DB9BACE00FB0B32 /* JapanGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DC71DB9BACE00FB0B32 /* JapanGuideTests.swift */; };
 		A6957DD31DB9BACE00FB0B32 /* JapanGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DD21DB9BACE00FB0B32 /* JapanGuideUITests.swift */; };
+		A6D903F51DE523AD00EEAB4B /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D903F41DE523AD00EEAB4B /* Greetings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A6957DCE1DB9BACE00FB0B32 /* JapanGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6957DD21DB9BACE00FB0B32 /* JapanGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanGuideUITests.swift; sourceTree = "<group>"; };
 		A6957DD41DB9BACE00FB0B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D903F41DE523AD00EEAB4B /* Greetings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A6957DB41DB9BACE00FB0B32 /* ViewController.swift */,
 				A6957DB61DB9BACE00FB0B32 /* Main.storyboard */,
 				A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */,
+				A6D903F41DE523AD00EEAB4B /* Greetings.swift */,
 				A6957DB91DB9BACE00FB0B32 /* Assets.xcassets */,
 				A6957DBB1DB9BACE00FB0B32 /* LaunchScreen.storyboard */,
 				A6957DBE1DB9BACE00FB0B32 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				A6957DB51DB9BACE00FB0B32 /* ViewController.swift in Sources */,
 				A6441A531DCC260700EB46D8 /* RestaurantEtiquette.swift in Sources */,
+				A6D903F51DE523AD00EEAB4B /* Greetings.swift in Sources */,
 				A6957DB31DB9BACE00FB0B32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

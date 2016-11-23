@@ -17,11 +17,14 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("Restaurant", sender: self)
     }
     
+    @IBAction func Greetings(sender: UIButton) {
+        self.performSegueWithIdentifier("Greetings", sender: self)
+    }
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
 
-    @IBAction func ButtonB(sender: AnyObject) {
-    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +50,7 @@ class ViewController: UIViewController {
     @IBAction func Restaurant_Etiquette(sender: UIButton) {
         
     }
+  
 
 }
 
