@@ -16,6 +16,7 @@
 		A6957DC81DB9BACE00FB0B32 /* JapanGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DC71DB9BACE00FB0B32 /* JapanGuideTests.swift */; };
 		A6957DD31DB9BACE00FB0B32 /* JapanGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DD21DB9BACE00FB0B32 /* JapanGuideUITests.swift */; };
 		A6D903F51DE523AD00EEAB4B /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D903F41DE523AD00EEAB4B /* Greetings.swift */; };
+		A6D903F71DE52F3600EEAB4B /* hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D903F61DE52F3600EEAB4B /* hello.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A6957DD21DB9BACE00FB0B32 /* JapanGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanGuideUITests.swift; sourceTree = "<group>"; };
 		A6957DD41DB9BACE00FB0B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D903F41DE523AD00EEAB4B /* Greetings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
+		A6D903F61DE52F3600EEAB4B /* hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hello.mp3; path = ../../hello.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,7 @@
 				A6D903F41DE523AD00EEAB4B /* Greetings.swift */,
 				A6957DB91DB9BACE00FB0B32 /* Assets.xcassets */,
 				A6957DBB1DB9BACE00FB0B32 /* LaunchScreen.storyboard */,
-				A6957DBE1DB9BACE00FB0B32 /* Info.plist */,
+				A6D903F91DE52F6300EEAB4B /* Supporting Files */,
 			);
 			path = JapanGuide;
 			sourceTree = "<group>";
@@ -129,6 +131,15 @@
 				A6957DD41DB9BACE00FB0B32 /* Info.plist */,
 			);
 			path = JapanGuideUITests;
+			sourceTree = "<group>";
+		};
+		A6D903F91DE52F6300EEAB4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6D903F61DE52F3600EEAB4B /* hello.mp3 */,
+				A6957DBE1DB9BACE00FB0B32 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 				A6957DBD1DB9BACE00FB0B32 /* LaunchScreen.storyboard in Resources */,
 				A6957DBA1DB9BACE00FB0B32 /* Assets.xcassets in Resources */,
 				A6957DB81DB9BACE00FB0B32 /* Main.storyboard in Resources */,
+				A6D903F71DE52F3600EEAB4B /* hello.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

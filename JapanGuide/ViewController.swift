@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var audioPlayer:AVAudioPlayer!
+
     //MARK: Properties
     
     @IBOutlet weak var Menu_Title: UILabel!
@@ -45,9 +49,7 @@ class ViewController: UIViewController {
             UIApplication.sharedApplication().openURL(url)
         }
     }
-    @IBAction func Restaurant_Etiquette(sender: UIButton) {
-        
-    }
+    
   
 
 }
