@@ -215,7 +215,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-Hw-FID">
-                                <rect key="frame" x="20" y="550" width="34" height="30"/>
+                                <rect key="frame" x="49" y="550" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="6eh-u4-HuR" kind="unwind" unwindAction="unwindToThisViewController:" id="0HJ-kw-49e"/>
@@ -228,8 +228,8 @@
                             <bool key="isElement" value="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="vEe-Hw-FID" firstAttribute="leading" secondItem="sqm-0c-y3V" secondAttribute="leadingMargin" constant="50" id="Ddi-J3-yUh"/>
-                            <constraint firstItem="RPD-mw-ZaU" firstAttribute="top" secondItem="vEe-Hw-FID" secondAttribute="bottom" constant="50" id="ief-XH-wWY"/>
+                            <constraint firstItem="vEe-Hw-FID" firstAttribute="leading" secondItem="sqm-0c-y3V" secondAttribute="leadingMargin" constant="20" id="Ddi-J3-yUh"/>
+                            <constraint firstItem="RPD-mw-ZaU" firstAttribute="top" secondItem="vEe-Hw-FID" secondAttribute="bottom" constant="10" id="ief-XH-wWY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pdJ-2n-SI8"/>
@@ -237,7 +237,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Anq-NB-5pW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6eh-u4-HuR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="494" y="-289"/>
+            <point key="canvasLocation" x="472" y="-239"/>
         </scene>
         <!--Restaurant Etiquette-->
         <scene sceneID="Te9-Xb-jp7">
