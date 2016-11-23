@@ -22,7 +22,9 @@ class Greetings: UIView {
      
         
     }
-
+    override func intrinsicContentSize() -> CGSize {
+        return CGSize(width: 240, height: 44)
+    }
 
 // MARK: Button Action
     
