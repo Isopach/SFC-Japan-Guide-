@@ -221,6 +221,19 @@
                                     <segue destination="6eh-u4-HuR" kind="unwind" unwindAction="unwindToThisViewController:" id="0HJ-kw-49e"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p02-0Y-lPJ">
+                                <rect key="frame" x="52" y="78" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="O95-EE-60a">
+                                <rect key="frame" x="221" y="79" width="20" height="20"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aU4-nV-8ea" appends="YES" id="1Sf-XJ-4F5"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
@@ -236,6 +249,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Anq-NB-5pW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6eh-u4-HuR" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="jfZ-kv-BnC"/>
+                <tapGestureRecognizer id="hh2-x4-ooT"/>
+                <tapGestureRecognizer id="aU4-nV-8ea"/>
             </objects>
             <point key="canvasLocation" x="472" y="-239"/>
         </scene>
@@ -292,5 +308,6 @@
     </scenes>
     <resources>
         <image name="donatePhoto" width="201" height="48"/>
+        <image name="soundIcon" width="128" height="128"/>
     </resources>
 </document>

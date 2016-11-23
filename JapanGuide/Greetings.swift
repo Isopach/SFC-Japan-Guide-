@@ -9,6 +9,9 @@
 import UIKit
 
 class Greetings: UIView {
+// MARK: Properties
+    
+    
 // MARK: Initialization
     
     required init?(coder aDecoder: NSCoder) {
@@ -16,5 +19,6 @@ class Greetings: UIView {
     }
 
 // MARK: Button Action
-    
+
+
 }

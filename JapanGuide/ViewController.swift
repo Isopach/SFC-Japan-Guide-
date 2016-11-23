@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var audioPlayer:AVAudioPlayer!
+    
 
     //MARK: Properties
     
@@ -26,7 +27,6 @@ class ViewController: UIViewController {
     }
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +34,7 @@ class ViewController: UIViewController {
         self.donatePhoto.addGestureRecognizer(tapGestureRecognizer)
         self.donatePhoto.userInteractionEnabled = true
         //myButton."Restaurant".textAlignment = NSTextAlignment.Center        // Handle the text field’s user input through delegate callbacks.
-      
-
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,8 +48,12 @@ class ViewController: UIViewController {
             UIApplication.sharedApplication().openURL(url)
         }
     }
-        
-  
-
+    @IBAction func startPlayingMP3NumberOne(sender: UITapGestureRecognizer) {
+        let sound_path = NSBundle.mainBundle().pathForResource("hello.mp3", ofType: "mp3")
+        let audioPlayer = AVPlayer(URL: NSURL(fileURLWithPath: sound_path!))
+        audioPlayer.play()
+    
+    }
+    
 }
 
