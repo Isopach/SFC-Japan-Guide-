@@ -24,8 +24,6 @@ class ViewController: UIViewController {
     }
 
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "linkTapped:")
