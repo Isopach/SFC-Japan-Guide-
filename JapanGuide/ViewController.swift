@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             UIApplication.sharedApplication().openURL(url)
         }
     }
-    
+        
   
 
 }
