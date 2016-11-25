@@ -17,7 +17,6 @@ class Greetings: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-
 // MARK: Button Action
 
 
