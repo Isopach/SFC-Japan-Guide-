@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class Greetings: UIView {
 // MARK: Properties
     
+    @IBOutlet weak var Hello: UIImageView!
+    var audioPlayer:AVAudioPlayer!
     
 // MARK: Initialization
     
@@ -18,6 +21,19 @@ class Greetings: UIView {
         super.init(coder: aDecoder)
     }
 // MARK: Button Action
-
-
+    @IBAction func playSound(sender: UIImageView) {
+        
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound", ofType: "mp3")
+        
+        if audioFilePath != nil {
+            
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()
+            
+        } else {
+            print("audio file is not found")
+        }
+    }
 }

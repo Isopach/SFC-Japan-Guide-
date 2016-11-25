@@ -249,6 +249,9 @@
                             <constraint firstItem="vEe-Hw-FID" firstAttribute="leading" secondItem="sqm-0c-y3V" secondAttribute="leadingMargin" constant="20" id="Ddi-J3-yUh"/>
                             <constraint firstItem="RPD-mw-ZaU" firstAttribute="top" secondItem="vEe-Hw-FID" secondAttribute="bottom" constant="30" id="ief-XH-wWY"/>
                         </constraints>
+                        <connections>
+                            <outlet property="Hello" destination="O95-EE-60a" id="hlw-af-19j"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="pdJ-2n-SI8"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
