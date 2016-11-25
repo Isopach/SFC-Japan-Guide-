@@ -15,14 +15,16 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="0vo-n8-fJs">
-                                <rect key="frame" x="140" y="220" width="320" height="160"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="launchPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="0vo-n8-fJs">
+                                <rect key="frame" x="7" y="268" width="400" height="200"/>
                                 <color key="backgroundColor" red="0.38150217001032377" green="0.71654770699111414" blue="0.84483393324607325" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="13Z-s3-Aku"/>
                                     <constraint firstAttribute="width" secondItem="0vo-n8-fJs" secondAttribute="height" multiplier="2:1" id="XPw-7G-w6k"/>
+                                    <constraint firstAttribute="width" constant="400" id="kra-IL-ySY"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -33,6 +35,8 @@
                             <constraint firstItem="0vo-n8-fJs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="200" id="a9M-0F-GzO"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

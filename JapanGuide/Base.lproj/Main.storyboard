@@ -20,22 +20,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0e-qd-beo">
-                                <rect key="frame" x="185" y="103" width="100" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0e-qd-beo">
+                                <rect key="frame" x="157" y="103" width="100" height="50"/>
                                 <state key="normal" title="Greetings"/>
                                 <connections>
                                     <action selector="Greetings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hsn-mX-Tou"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fez-U9-H8Q">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fez-U9-H8Q">
                                 <rect key="frame" x="280" y="103" width="100" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="6wK-J4-TnY"/>
-                                </constraints>
                                 <state key="normal" title="Button C"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG9-ev-Zyj">
-                                <rect key="frame" x="76" y="180" width="100" height="186.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG9-ev-Zyj">
+                                <rect key="frame" x="20" y="195" width="100" height="171.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="BN5-s1-hfe"/>
                                     <constraint firstAttribute="width" constant="46" id="Ybr-AT-Po2"/>
@@ -47,19 +44,15 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isH-j3-ubx">
-                                <rect key="frame" x="185" y="180" width="100" height="186.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isH-j3-ubx">
+                                <rect key="frame" x="157" y="180" width="100" height="186.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Utu-2H-RfY"/>
                                 </constraints>
                                 <state key="normal" title="Button E"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-Bz-Dar">
-                                <rect key="frame" x="280" y="180" width="100" height="186.5"/>
-                                <state key="normal" title="Button F"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="68" placeholderIntrinsicHeight="52" image="donatePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="wcm-mw-I2Z">
-                                <rect key="frame" x="156" y="634" width="100" height="50"/>
+                                <rect key="frame" x="157" y="634" width="100" height="50"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="as6-eN-vrk"/>
@@ -70,13 +63,13 @@
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clk-Kp-n68">
-                                <rect key="frame" x="185" y="28" width="43" height="20.5"/>
+                                <rect key="frame" x="186" y="28" width="43" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="PjY-Mq-ao7">
-                                <rect key="frame" x="76" y="103" width="100" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="PjY-Mq-ao7">
+                                <rect key="frame" x="20" y="103" width="100" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="s9z-rQ-QHw"/>
                                 </constraints>
@@ -85,6 +78,10 @@
                                     <action selector="RestaurantPage:" destination="BYZ-38-t0r" eventType="touchDown" id="Tqg-wU-IKj"/>
                                     <action selector="Restaurant_Etiquette:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Y2-0f-7Cg"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-Bz-Dar">
+                                <rect key="frame" x="280" y="180" width="100" height="186.5"/>
+                                <state key="normal" title="Button F"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
