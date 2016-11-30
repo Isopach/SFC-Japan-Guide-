@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A6441A531DCC260700EB46D8 /* RestaurantEtiquette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */; };
 		A6880C6F1DEE60CD008582DA /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880C6E1DEE60CD008582DA /* Greetings.swift */; };
+		A6880C731DEE76E9008582DA /* Etiquette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880C721DEE76E9008582DA /* Etiquette.swift */; };
 		A6957DB31DB9BACE00FB0B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DB21DB9BACE00FB0B32 /* AppDelegate.swift */; };
 		A6957DB51DB9BACE00FB0B32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DB41DB9BACE00FB0B32 /* ViewController.swift */; };
 		A6957DB81DB9BACE00FB0B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6957DB61DB9BACE00FB0B32 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantEtiquette.swift; sourceTree = "<group>"; };
 		A6880C6E1DEE60CD008582DA /* Greetings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
+		A6880C721DEE76E9008582DA /* Etiquette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etiquette.swift; sourceTree = "<group>"; };
 		A6957DAF1DB9BACE00FB0B32 /* JapanGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapanGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6957DB21DB9BACE00FB0B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6957DB41DB9BACE00FB0B32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A6957DB21DB9BACE00FB0B32 /* AppDelegate.swift */,
 				A6957DB41DB9BACE00FB0B32 /* ViewController.swift */,
 				A6957DB61DB9BACE00FB0B32 /* Main.storyboard */,
+				A6880C721DEE76E9008582DA /* Etiquette.swift */,
 				A6880C6E1DEE60CD008582DA /* Greetings.swift */,
 				A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */,
 				A6957DB91DB9BACE00FB0B32 /* Assets.xcassets */,
@@ -280,6 +283,7 @@
 				A6880C6F1DEE60CD008582DA /* Greetings.swift in Sources */,
 				A6957DB51DB9BACE00FB0B32 /* ViewController.swift in Sources */,
 				A6441A531DCC260700EB46D8 /* RestaurantEtiquette.swift in Sources */,
+				A6880C731DEE76E9008582DA /* Etiquette.swift in Sources */,
 				A6957DB31DB9BACE00FB0B32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
