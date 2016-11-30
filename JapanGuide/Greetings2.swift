@@ -32,9 +32,9 @@ class Greetings2: UIViewController {
     }
     
     //MARK: Actions
-   /* @IBAction func playSound(sender: UIImageView) {
+   @IBAction func playSound(sender: UIImageView) {
         
-        let audioFilePath = NSBundle.mainBundle().pathForResource("sound", ofType: "mp3")
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/hello", ofType: "mp3")
         
         if audioFilePath != nil {
             
@@ -46,12 +46,12 @@ class Greetings2: UIViewController {
         } else {
             print("audio file is not found")
         }
-    }*/
-    @IBAction func playSound(sender: UITapGestureRecognizer) {
+    }
+    /*@IBAction func playSound(sender: UITapGestureRecognizer) {
         let sound_path = NSBundle.mainBundle().pathForResource("hello.mp3", ofType: "mp3")
         let audioPlayer = AVPlayer(URL: NSURL(fileURLWithPath: sound_path!))
         audioPlayer.play()
         
-    }
+    }*/
 
 }
