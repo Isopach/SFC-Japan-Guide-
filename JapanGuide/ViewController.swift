@@ -22,10 +22,6 @@ class ViewController: UIViewController {
     @IBAction func Greetings(sender: UIButton) {
         self.performSegueWithIdentifier("Greetings", sender: self)
     }
-    
-    @IBAction func Greetings2(sender: UIButton) {
-        self.performSegueWithIdentifier("Greetings2", sender: self)
-    }
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
     

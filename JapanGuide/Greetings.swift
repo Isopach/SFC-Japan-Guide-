@@ -1,39 +1,53 @@
 //
-//  Greetings.swift
+//  Greetings2.swift
 //  JapanGuide
 //
-//  Created by You_liang Koh on 2016/11/23.
+//  Created by You_liang Koh on 2016/11/30.
 //  Copyright © 2016年 SFC. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class Greetings: UIView {
-// MARK: Properties
-    
-    @IBOutlet weak var Hello: UIImageView!
+class Greetings: UIViewController, AVAudioPlayerDelegate  {
+
+    //MARK: Properties
+
+    @IBOutlet weak var soundIcon1: UIImageView!
     var audioPlayer:AVAudioPlayer!
     
-// MARK: Initialization
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "playSound:")
+        self.soundIcon1.addGestureRecognizer(tapGestureRecognizer)
+        self.soundIcon1.userInteractionEnabled = true
+
+
     }
-// MARK: Button Action
-    @IBAction func playSound(sender: UIImageView) {
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: Actions
+   @IBAction func playSound(sender: UIImageView) {
+    
+    let audioFilePath = NSBundle.mainBundle().pathForResource("sound/hello", ofType: "wav")
+
+    if audioFilePath != nil {
+
+        let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+        audioPlayer.play()
+
+                            }
+    else {
         
-        let audioFilePath = NSBundle.mainBundle().pathForResource("sound", ofType: "mp3")
+        print("audio file is not found")
         
-        if audioFilePath != nil {
-            
-            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
-            
-            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
-            audioPlayer.play()
-            
-        } else {
-            print("audio file is not found")
         }
     }
 }

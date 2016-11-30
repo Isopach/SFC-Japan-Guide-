@@ -9,19 +9,19 @@
 import UIKit
 import AVFoundation
 
-class Greetings2: UIViewController, AVAudioPlayerDelegate  {
+class Greetings: UIViewController, AVAudioPlayerDelegate  {
 
     //MARK: Properties
 
-    @IBOutlet weak var soundIcon: UIImageView!
+    @IBOutlet weak var soundIcon1: UIImageView!
     var audioPlayer:AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "playSound:")
-        self.soundIcon.addGestureRecognizer(tapGestureRecognizer)
-        self.soundIcon.userInteractionEnabled = true
+        self.soundIcon1.addGestureRecognizer(tapGestureRecognizer)
+        self.soundIcon1.userInteractionEnabled = true
 
 
     }
@@ -33,8 +33,6 @@ class Greetings2: UIViewController, AVAudioPlayerDelegate  {
     
     //MARK: Actions
    @IBAction func playSound(sender: UIImageView) {
-        
-   
     
     let audioFilePath = NSBundle.mainBundle().pathForResource("sound/hello", ofType: "wav")
 

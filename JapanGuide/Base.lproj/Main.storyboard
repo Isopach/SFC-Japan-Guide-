@@ -8,10 +8,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Greetings2-->
+        <!--Greetings-->
         <scene sceneID="8Mf-BZ-7at">
             <objects>
-                <viewController title="Greetings2" id="1UL-ox-7bn" customClass="Greetings2" customModule="JapanGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Greetings" id="1UL-ox-7bn" customClass="Greetings" customModule="JapanGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Zv-rt-9ut"/>
                         <viewControllerLayoutGuide type="bottom" id="rhz-Pm-bUe"/>
@@ -62,7 +62,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
-                        <outlet property="soundIcon" destination="roh-WI-0bE" id="1Wc-HF-phK"/>
+                        <outlet property="soundIcon1" destination="roh-WI-0bE" id="hLZ-PI-SvT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0FU-7q-UuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -89,10 +89,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0e-qd-beo">
                                 <rect key="frame" x="157" y="104" width="100" height="50"/>
-                                <state key="normal" title="Greetings"/>
-                                <connections>
-                                    <action selector="Greetings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hsn-mX-Tou"/>
-                                </connections>
+                                <state key="normal" title="Map"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG9-ev-Zyj">
                                 <rect key="frame" x="20" y="180" width="100" height="50"/>
@@ -148,10 +145,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fez-U9-H8Q">
                                 <rect key="frame" x="280" y="104" width="100" height="50"/>
-                                <state key="normal" title="Greetings2"/>
+                                <state key="normal" title="Greetings"/>
                                 <connections>
-                                    <action selector="Greetings2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chR-dR-nhP"/>
-                                    <segue destination="1UL-ox-7bn" kind="presentation" identifier="Greetings2" id="sZe-z9-xnq"/>
+                                    <action selector="Greetings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kng-S7-cq6"/>
+                                    <segue destination="1UL-ox-7bn" kind="presentation" identifier="Greetings" id="sZe-z9-xnq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,7 +251,6 @@
                     <connections>
                         <outlet property="donatePhoto" destination="wcm-mw-I2Z" id="Fr0-5q-Qgc"/>
                         <segue destination="tza-6n-SNR" kind="presentation" identifier="Restaurant" id="Fpe-Op-qyJ"/>
-                        <segue destination="lBg-D1-ete" kind="presentation" identifier="Greetings" id="mca-V8-eNF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -265,64 +261,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1139" y="153"/>
-        </scene>
-        <!--Greetings-->
-        <scene sceneID="vqF-rd-4Vd">
-            <objects>
-                <viewController title="Greetings" id="lBg-D1-ete" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Y3H-xe-8jQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="RPD-mw-ZaU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" id="sqm-0c-y3V" customClass="Greetings" customModule="JapanGuide" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Greetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7o-I4-USY">
-                                <rect key="frame" x="170" y="28" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-Hw-FID">
-                                <rect key="frame" x="20" y="686" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="6eh-u4-HuR" kind="unwind" unwindAction="unwindToThisViewController:" id="0HJ-kw-49e"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p02-0Y-lPJ">
-                                <rect key="frame" x="31" y="93" width="39" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JU-GO-c4C">
-                                <rect key="frame" x="20" y="64" width="60" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" playsSound="YES"/>
-                            <bool key="isElement" value="YES"/>
-                        </accessibility>
-                        <constraints>
-                            <constraint firstItem="vEe-Hw-FID" firstAttribute="leading" secondItem="sqm-0c-y3V" secondAttribute="leadingMargin" constant="20" id="Ddi-J3-yUh"/>
-                            <constraint firstItem="RPD-mw-ZaU" firstAttribute="top" secondItem="vEe-Hw-FID" secondAttribute="bottom" constant="30" id="ief-XH-wWY"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="pdJ-2n-SI8"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="414" height="736"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Anq-NB-5pW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="6eh-u4-HuR" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="J6Q-Xe-1yq"/>
-            </objects>
-            <point key="canvasLocation" x="472" y="-239"/>
         </scene>
         <!--Restaurant Etiquette-->
         <scene sceneID="Te9-Xb-jp7">
