@@ -18,4 +18,4 @@
 1. Drag ViewController element to storyboard
 2. Link button to ViewController. Choose "Present Modally"
 3. Click on arrow between the ViewControllers and give it a unique Identifier
-4. Use the "IBAction func to performSegueWithIdentifier and state the same Identifier as (3)
+4. Use the ```IBAction func to performSegueWithIdentifier``` and state the same Identifier as (3)
