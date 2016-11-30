@@ -8,6 +8,73 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Greetings2-->
+        <scene sceneID="8Mf-BZ-7at">
+            <objects>
+                <viewController title="Greetings2" id="1UL-ox-7bn" customClass="Greetings2" customModule="JapanGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Zv-rt-9ut"/>
+                        <viewControllerLayoutGuide type="bottom" id="rhz-Pm-bUe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="srF-ch-dyP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Greetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4a-1X-A0j">
+                                <rect key="frame" x="170" y="28" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYq-yY-l0E">
+                                <rect key="frame" x="20" y="686" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="gHE-1J-4oh" kind="unwind" unwindAction="unwindToThisViewController:" id="kMa-WO-UU7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TP-fz-3EX">
+                                <rect key="frame" x="20" y="64" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leQ-jc-2jU">
+                                <rect key="frame" x="52" y="93" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="roh-WI-0bE">
+                                <rect key="frame" x="120" y="94" width="20" height="20"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RLZ-G6-Z5F" appends="YES" id="SKE-KF-S7z"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rhz-Pm-bUe" firstAttribute="top" secondItem="SYq-yY-l0E" secondAttribute="bottom" constant="30" id="LDg-9c-1ey"/>
+                            <constraint firstItem="SYq-yY-l0E" firstAttribute="leading" secondItem="srF-ch-dyP" secondAttribute="leadingMargin" constant="20" id="UDi-kO-WNW"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <outlet property="soundIcon" destination="roh-WI-0bE" id="1Wc-HF-phK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0FU-7q-UuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gHE-1J-4oh" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="RLZ-G6-Z5F">
+                    <connections>
+                        <action selector="playSound:" destination="1UL-ox-7bn" id="hIW-mv-eZ4"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1614" y="-39"/>
+        </scene>
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -21,15 +88,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0e-qd-beo">
-                                <rect key="frame" x="157" y="103.5" width="100" height="50"/>
+                                <rect key="frame" x="157" y="104" width="100" height="50"/>
                                 <state key="normal" title="Greetings"/>
                                 <connections>
                                     <action selector="Greetings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hsn-mX-Tou"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fez-U9-H8Q">
-                                <rect key="frame" x="280" y="103" width="100" height="50"/>
-                                <state key="normal" title="Button C"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG9-ev-Zyj">
                                 <rect key="frame" x="20" y="180" width="100" height="50"/>
@@ -83,6 +146,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fez-U9-H8Q">
+                                <rect key="frame" x="280" y="104" width="100" height="50"/>
+                                <state key="normal" title="Greetings2"/>
+                                <connections>
+                                    <action selector="Greetings2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chR-dR-nhP"/>
+                                    <segue destination="1UL-ox-7bn" kind="presentation" identifier="Greetings2" id="sZe-z9-xnq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -148,6 +219,7 @@
                                 <exclude reference="4zW-7L-JpL"/>
                                 <exclude reference="XwA-5o-wkV"/>
                                 <exclude reference="kqK-mL-bF6"/>
+                                <exclude reference="XYe-8f-4Fh"/>
                                 <exclude reference="Fie-3q-7vN"/>
                                 <exclude reference="ecg-AF-sFU"/>
                                 <exclude reference="kVp-JB-o9u"/>
@@ -161,7 +233,6 @@
                                 <exclude reference="tPj-kA-cLb"/>
                                 <exclude reference="uKz-4H-in0"/>
                                 <exclude reference="vm4-Ti-7Te"/>
-                                <exclude reference="XYe-8f-4Fh"/>
                                 <exclude reference="13g-by-Igs"/>
                                 <exclude reference="1VL-Wb-jZh"/>
                                 <exclude reference="gnE-rM-HCa"/>

@@ -7,12 +7,9 @@
 //
 
 import UIKit
-import AVFoundation
 
 class ViewController: UIViewController {
-    
-    var audioPlayer:AVAudioPlayer!
-    
+        
 
     //MARK: Properties
     
@@ -24,6 +21,10 @@ class ViewController: UIViewController {
     
     @IBAction func Greetings(sender: UIButton) {
         self.performSegueWithIdentifier("Greetings", sender: self)
+    }
+    
+    @IBAction func Greetings2(sender: UIButton) {
+        self.performSegueWithIdentifier("Greetings2", sender: self)
     }
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
@@ -48,12 +49,7 @@ class ViewController: UIViewController {
             UIApplication.sharedApplication().openURL(url)
         }
     }
-    @IBAction func startPlayingMP3NumberOne(sender: UITapGestureRecognizer) {
-        let sound_path = NSBundle.mainBundle().pathForResource("hello.mp3", ofType: "mp3")
-        let audioPlayer = AVPlayer(URL: NSURL(fileURLWithPath: sound_path!))
-        audioPlayer.play()
-    
-    }
+
     
 }
 
