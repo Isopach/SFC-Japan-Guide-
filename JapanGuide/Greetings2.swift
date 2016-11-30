@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class Greetings2: UIViewController {
+class Greetings2: UIViewController, AVAudioPlayerDelegate  {
 
     //MARK: Properties
 
@@ -34,18 +34,25 @@ class Greetings2: UIViewController {
     //MARK: Actions
    @IBAction func playSound(sender: UIImageView) {
         
-        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/hello", ofType: "mp3")
-        
-        if audioFilePath != nil {
-            
-            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
-            
-            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
-            audioPlayer.play()
-            
-        } else {
-            print("audio file is not found")
-        }
+    /*let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("sound", ofType: "mp3")!)
+    audioPlayer = try! AVAudioPlayer(contentsOfURL: audioPath)
+    audioPlayer.delegate = self
+    audioPlayer.prepareToPlay()
+    audioPlayer.play()
+    }*/
+    
+let audioFilePath = NSBundle.mainBundle().pathForResource("hello", ofType: "mp3")
+
+if audioFilePath != nil {
+
+let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+
+audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+audioPlayer.play()
+
+} else {
+print("audio file is not found")
+}
     }
     /*@IBAction func playSound(sender: UITapGestureRecognizer) {
         let sound_path = NSBundle.mainBundle().pathForResource("hello.mp3", ofType: "mp3")

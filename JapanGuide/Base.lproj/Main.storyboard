@@ -303,13 +303,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="O95-EE-60a">
-                                <rect key="frame" x="94" y="94" width="20" height="20"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="J6Q-Xe-1yq" appends="YES" id="1Kr-jI-gfx"/>
-                                </connections>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
@@ -320,9 +313,6 @@
                             <constraint firstItem="vEe-Hw-FID" firstAttribute="leading" secondItem="sqm-0c-y3V" secondAttribute="leadingMargin" constant="20" id="Ddi-J3-yUh"/>
                             <constraint firstItem="RPD-mw-ZaU" firstAttribute="top" secondItem="vEe-Hw-FID" secondAttribute="bottom" constant="30" id="ief-XH-wWY"/>
                         </constraints>
-                        <connections>
-                            <outlet property="Hello" destination="O95-EE-60a" id="hlw-af-19j"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="pdJ-2n-SI8"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
