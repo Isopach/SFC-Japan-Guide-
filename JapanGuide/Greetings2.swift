@@ -34,31 +34,22 @@ class Greetings2: UIViewController, AVAudioPlayerDelegate  {
     //MARK: Actions
    @IBAction func playSound(sender: UIImageView) {
         
-    /*let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("sound", ofType: "mp3")!)
-    audioPlayer = try! AVAudioPlayer(contentsOfURL: audioPath)
-    audioPlayer.delegate = self
-    audioPlayer.prepareToPlay()
-    audioPlayer.play()
-    }*/
+   
     
-let audioFilePath = NSBundle.mainBundle().pathForResource("hello", ofType: "mp3")
+    let audioFilePath = NSBundle.mainBundle().pathForResource("sound/hello", ofType: "wav")
 
-if audioFilePath != nil {
+    if audioFilePath != nil {
 
-let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+        let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
 
-audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
-audioPlayer.play()
-
-} else {
-print("audio file is not found")
-}
-    }
-    /*@IBAction func playSound(sender: UITapGestureRecognizer) {
-        let sound_path = NSBundle.mainBundle().pathForResource("hello.mp3", ofType: "mp3")
-        let audioPlayer = AVPlayer(URL: NSURL(fileURLWithPath: sound_path!))
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
         audioPlayer.play()
-        
-    }*/
 
+                            }
+    else {
+        
+        print("audio file is not found")
+        
+        }
+    }
 }

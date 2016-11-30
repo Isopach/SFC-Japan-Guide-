@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A6441A531DCC260700EB46D8 /* RestaurantEtiquette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */; };
 		A6880C6F1DEE60CD008582DA /* Greetings2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880C6E1DEE60CD008582DA /* Greetings2.swift */; };
-		A6880C711DEE6A7C008582DA /* hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6880C701DEE6A7C008582DA /* hello.mp3 */; };
 		A6957DB31DB9BACE00FB0B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DB21DB9BACE00FB0B32 /* AppDelegate.swift */; };
 		A6957DB51DB9BACE00FB0B32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DB41DB9BACE00FB0B32 /* ViewController.swift */; };
 		A6957DB81DB9BACE00FB0B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6957DB61DB9BACE00FB0B32 /* Main.storyboard */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantEtiquette.swift; sourceTree = "<group>"; };
 		A6880C6E1DEE60CD008582DA /* Greetings2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greetings2.swift; sourceTree = "<group>"; };
-		A6880C701DEE6A7C008582DA /* hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hello.mp3; path = sound/hello.mp3; sourceTree = "<group>"; };
 		A6957DAF1DB9BACE00FB0B32 /* JapanGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapanGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6957DB21DB9BACE00FB0B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6957DB41DB9BACE00FB0B32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 		A6D903F91DE52F6300EEAB4B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A6880C701DEE6A7C008582DA /* hello.mp3 */,
 				A6D903FA1DE5385E00EEAB4B /* sound */,
 				A6957DBE1DB9BACE00FB0B32 /* Info.plist */,
 			);
@@ -257,7 +254,6 @@
 			files = (
 				A6957DBD1DB9BACE00FB0B32 /* LaunchScreen.storyboard in Resources */,
 				A6957DBA1DB9BACE00FB0B32 /* Assets.xcassets in Resources */,
-				A6880C711DEE6A7C008582DA /* hello.mp3 in Resources */,
 				A6D903FB1DE5385E00EEAB4B /* sound in Resources */,
 				A6957DB81DB9BACE00FB0B32 /* Main.storyboard in Resources */,
 			);
