@@ -15,8 +15,7 @@ class RestaurantEtiquette: UIView {
         
         }
     
-// MARK: Button Action
-    
+// MARK: Action
     
 }
 

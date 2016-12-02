@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A630FFD51DF10EEA003835D5 /* GreetingsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630FFD41DF10EEA003835D5 /* GreetingsCollectionViewController.swift */; };
 		A6441A531DCC260700EB46D8 /* RestaurantEtiquette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */; };
 		A6880C6F1DEE60CD008582DA /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880C6E1DEE60CD008582DA /* Greetings.swift */; };
 		A6880C731DEE76E9008582DA /* Etiquette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880C721DEE76E9008582DA /* Etiquette.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A630FFD41DF10EEA003835D5 /* GreetingsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingsCollectionViewController.swift; sourceTree = "<group>"; };
 		A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantEtiquette.swift; sourceTree = "<group>"; };
 		A6880C6E1DEE60CD008582DA /* Greetings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
 		A6880C721DEE76E9008582DA /* Etiquette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etiquette.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				A6880C721DEE76E9008582DA /* Etiquette.swift */,
 				A6880C6E1DEE60CD008582DA /* Greetings.swift */,
 				A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */,
+				A630FFD41DF10EEA003835D5 /* GreetingsCollectionViewController.swift */,
 				A6957DB91DB9BACE00FB0B32 /* Assets.xcassets */,
 				A6957DBB1DB9BACE00FB0B32 /* LaunchScreen.storyboard */,
 				A6D903F91DE52F6300EEAB4B /* Supporting Files */,
@@ -285,6 +288,7 @@
 				A6441A531DCC260700EB46D8 /* RestaurantEtiquette.swift in Sources */,
 				A6880C731DEE76E9008582DA /* Etiquette.swift in Sources */,
 				A6957DB31DB9BACE00FB0B32 /* AppDelegate.swift in Sources */,
+				A630FFD51DF10EEA003835D5 /* GreetingsCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

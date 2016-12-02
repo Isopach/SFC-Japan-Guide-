@@ -84,7 +84,7 @@
                                 <rect key="frame" x="280" y="104" width="100" height="50"/>
                                 <state key="normal" title="Greetings"/>
                                 <connections>
-                                    <action selector="Greetings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kng-S7-cq6"/>
+                                    <action selector="Greetings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YA3-Rc-SOL"/>
                                     <segue destination="1UL-ox-7bn" kind="presentation" identifier="Greetings" id="sZe-z9-xnq"/>
                                 </connections>
                             </button>
@@ -336,7 +336,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9a-Fv-PEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6Oq-FH-6mk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="901" y="-568"/>
+            <point key="canvasLocation" x="1657" y="-254"/>
         </scene>
         <!--Greetings-->
         <scene sceneID="8Mf-BZ-7at">
@@ -375,12 +375,21 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good evening" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDO-v4-BIc">
+                                <rect key="frame" x="52" y="122" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="roh-WI-0bE">
-                                <rect key="frame" x="120" y="94" width="20" height="20"/>
+                                <rect key="frame" x="150" y="94" width="21" height="20"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RLZ-G6-Z5F" appends="YES" id="SKE-KF-S7z"/>
                                 </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0Po-DS-HMO">
+                                <rect key="frame" x="186" y="123" width="20" height="20"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -392,7 +401,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
-                        <outlet property="soundIcon1" destination="roh-WI-0bE" id="hLZ-PI-SvT"/>
+                        <outlet property="hello" destination="roh-WI-0bE" id="E5x-1u-jYh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0FU-7q-UuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -404,6 +413,42 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="472" y="-271"/>
+        </scene>
+        <!--Greetings Collection View Controller-->
+        <scene sceneID="R7T-JR-EAI">
+            <objects>
+                <collectionViewController id="E9y-6D-3cU" customClass="GreetingsCollectionViewController" customModule="JapanGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="tM6-94-Sjs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gaC-OL-rJO">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="m9c-fx-Yzr">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="E9y-6D-3cU" id="HT7-3L-BzK"/>
+                            <outlet property="delegate" destination="E9y-6D-3cU" id="M6b-z0-4fV"/>
+                        </connections>
+                    </collectionView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hv5-fK-xdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="-526"/>
         </scene>
     </scenes>
     <resources>
