@@ -18,15 +18,27 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
    // var imageArray = [UIImage(named: "hello"),UIImage(named: "birds"),UIImage(named: "nature"),UIImage(named: "wave")]
    // var nameArray = ["hello","evening","thanks","welldone"]
     
+    @IBOutlet weak var helpme: UIImageView!
     var audioPlayer:AVAudioPlayer!
     //var audioName:String!
     
+    //let directory0 = "sound/"
+    //let filename0 = UILabel.String
+   // let path = directory0 + filename0
+    
+    @IBOutlet weak var pleasehelpme: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "playSound:")
         self.hello.addGestureRecognizer(tapGestureRecognizer)
         self.hello.userInteractionEnabled = true
+        
+        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: "playSound1:")
+        self.helpme.addGestureRecognizer(tapGestureRecognizer1)
+        self.helpme.userInteractionEnabled = true
+        
+        pleasehelpme.text = "please help me"
 
 
     }
@@ -59,6 +71,25 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
         
         print("audio file is not found")
         
+        }
+    }
+    
+    @IBAction func playSound1(sender: UIImageView) {
+        
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/please help me", ofType: "m4a")
+        
+        if audioFilePath != nil {
+            
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()
+            
+        }
+        else {
+            
+            print("audio file is not found")
+            
         }
     }
 }
