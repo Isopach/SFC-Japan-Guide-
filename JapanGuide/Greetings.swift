@@ -14,9 +14,7 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     //MARK: Properties
 
     @IBOutlet weak var hello: UIImageView!
-    //var soundArray : [NSURL] = [sound1, sound2, sound3]
-   // var imageArray = [UIImage(named: "hello"),UIImage(named: "birds"),UIImage(named: "nature"),UIImage(named: "wave")]
-   // var nameArray = ["hello","evening","thanks","welldone"]
+g","thanks","welldone"]
     
     @IBOutlet weak var helpme: UIImageView!
     var audioPlayer:AVAudioPlayer!
@@ -26,7 +24,9 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     //let filename0 = UILabel.String
    // let path = directory0 + filename0
     
-    @IBOutlet weak var pleasehelpme: UILabel!
+    //@IBOutlet weak var pleasehelpme: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,8 +38,7 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
         self.helpme.addGestureRecognizer(tapGestureRecognizer1)
         self.helpme.userInteractionEnabled = true
         
-        pleasehelpme.text = "please help me"
-
+        pleasehelpme.text = "Please help me"
 
     }
 
@@ -76,7 +75,10 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func playSound1(sender: UIImageView) {
         
-        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/please help me", ofType: "m4a")
+     
+        
+        
+        let audioFilePath = NSBundle.mainBundle().pathForResource(, ofType: "m4a")
         
         if audioFilePath != nil {
             
@@ -92,4 +94,22 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
             
         }
     }
+    
+    /*
+    Works in Swift 3
+    class soundFile: NSObject {
+        dynamic var soundName: String = ""
+        
+        init(soundName: String)
+        
+        {
+            self.soundName = soundName
+        }
+    }
+    
+    let pleasehelpme = soundFile(soundName:"pleasehelpme")
+    
+    #keyPath(soundFile.soundName)
+    pleasehelpme.valueForKey(#keyPath(soundFile.soundName))*/
+    
 }
