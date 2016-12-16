@@ -1,5 +1,5 @@
 //
-//  Greetings2.swift
+//  Greetings.swift
 //  JapanGuide
 //
 //  Created by You_liang Koh on 2016/11/30.
@@ -14,7 +14,7 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     //MARK: Properties
 
     @IBOutlet weak var hello: UIImageView!
-g","thanks","welldone"]
+
     
     @IBOutlet weak var helpme: UIImageView!
     var audioPlayer:AVAudioPlayer!
@@ -24,7 +24,7 @@ g","thanks","welldone"]
     //let filename0 = UILabel.String
    // let path = directory0 + filename0
     
-    //@IBOutlet weak var pleasehelpme: UILabel!
+    @IBOutlet weak var pleasehelpme: UILabel!
 
     
     override func viewDidLoad() {
@@ -73,12 +73,9 @@ g","thanks","welldone"]
         }
     }
     
-    @IBAction func playSound1(sender: UIImageView) {
+    @IBAction func playSound1(sender: UILabel) {
         
-     
-        
-        
-        let audioFilePath = NSBundle.mainBundle().pathForResource(, ofType: "m4a")
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/please help me",ofType: "m4a")
         
         if audioFilePath != nil {
             
@@ -112,4 +109,4 @@ g","thanks","welldone"]
     #keyPath(soundFile.soundName)
     pleasehelpme.valueForKey(#keyPath(soundFile.soundName))*/
     
-}
+    }
