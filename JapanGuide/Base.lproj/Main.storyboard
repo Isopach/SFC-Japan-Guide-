@@ -457,6 +457,7 @@
         <!--Greetings Collection View Controller-->
         <scene sceneID="R7T-JR-EAI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hv5-fK-xdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="E9y-6D-3cU" customClass="GreetingsCollectionViewController" customModule="JapanGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="tM6-94-Sjs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -485,7 +486,6 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hv5-fK-xdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="949" y="-526"/>
         </scene>

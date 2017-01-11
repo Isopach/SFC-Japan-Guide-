@@ -34,9 +34,9 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
         self.hello.addGestureRecognizer(tapGestureRecognizer)
         self.hello.isUserInteractionEnabled = true
         
-        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(Greetings.playSound1(_:)))
+       /* let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(Greetings.playSound1(_:)))
         self.helpme.addGestureRecognizer(tapGestureRecognizer1)
-        self.helpme.isUserInteractionEnabled = true
+        self.helpme.isUserInteractionEnabled = true*/
         
         pleasehelpme.text = "Please help me"
 
@@ -52,8 +52,26 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     {
         //audioName = nameArray[indexPath.row]
     }
+    @IBAction func playSound(_ sender: UIImageView) {
+        
+            guard let sound = NSDataAsset(name: "soundName") else {
+                print("asset not found")
+                return
+            }
+            
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+                try AVAudioSession.sharedInstance().setActive(true)
+                
+                audioPlayer = try AVAudioPlayer(data: sound.data, fileTypeHint: AVFileTypeMPEGLayer3)
+                
+                audioPlayer!.play()
+            } catch let error as NSError {
+                print("error: \(error.localizedDescription)")
+            }
+        }
     //let audioName:String!
-
+/*For Swift 2
    @IBAction func playSound(_ sender: UIImageView) {
     
     let audioFilePath = Bundle.main.path(forResource: "sound/hello", ofType: "wav")
@@ -90,10 +108,9 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
             print("audio file is not found")
             
         }
-    }
+    }*/
     
-    /*
-    Works in Swift 3
+    /*Sample Code for Swift 3
     class soundFile: NSObject {
         dynamic var soundName: String = ""
         
@@ -108,5 +125,7 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     
     #keyPath(soundFile.soundName)
     pleasehelpme.valueForKey(#keyPath(soundFile.soundName))*/
+    
+    
     
     }
