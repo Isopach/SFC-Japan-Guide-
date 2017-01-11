@@ -30,13 +30,13 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "playSound:")
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Greetings.playSound(_:)))
         self.hello.addGestureRecognizer(tapGestureRecognizer)
-        self.hello.userInteractionEnabled = true
+        self.hello.isUserInteractionEnabled = true
         
-        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: "playSound1:")
+        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(Greetings.playSound1(_:)))
         self.helpme.addGestureRecognizer(tapGestureRecognizer1)
-        self.helpme.userInteractionEnabled = true
+        self.helpme.isUserInteractionEnabled = true
         
         pleasehelpme.text = "Please help me"
 
@@ -48,21 +48,21 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     }
     
     //MARK: Actions
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: IndexPath)
     {
         //audioName = nameArray[indexPath.row]
     }
     //let audioName:String!
 
-   @IBAction func playSound(sender: UIImageView) {
+   @IBAction func playSound(_ sender: UIImageView) {
     
-    let audioFilePath = NSBundle.mainBundle().pathForResource("sound/hello", ofType: "wav")
+    let audioFilePath = Bundle.main.path(forResource: "sound/hello", ofType: "wav")
 
     if audioFilePath != nil {
 
-        let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+        let audioFileUrl = URL(fileURLWithPath: audioFilePath!)
 
-        audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+        audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
         audioPlayer.play()
 
                             }
@@ -73,15 +73,15 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
-    @IBAction func playSound1(sender: UILabel) {
+    @IBAction func playSound1(_ sender: UILabel) {
         
-        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/please help me",ofType: "m4a")
+        let audioFilePath = Bundle.main.path(forResource: "sound/please help me",ofType: "m4a")
         
         if audioFilePath != nil {
             
-            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            let audioFileUrl = URL(fileURLWithPath: audioFilePath!)
             
-            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
             audioPlayer.play()
             
         }

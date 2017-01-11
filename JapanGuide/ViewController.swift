@@ -15,25 +15,25 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Menu_Title: UILabel!
     @IBOutlet weak var donatePhoto: UIImageView!
-    @IBAction func Etiquette(sender: UIButton) {
-        self.performSegueWithIdentifier("Etiquette", sender: self)
+    @IBAction func Etiquette(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Etiquette", sender: self)
     }
     
-    @IBAction func Greetings(sender: UIButton) {
-        self.performSegueWithIdentifier("Greetings", sender: self)
+    @IBAction func Greetings(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Greetings", sender: self)
     }
     
-    @IBAction func Maps(sender: UIButton) {
-        self.performSegueWithIdentifier("Maps", sender: self)
+    @IBAction func Maps(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Maps", sender: self)
     }
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+    @IBAction func unwindToThisViewController(_ segue: UIStoryboardSegue) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "linkTapped:")
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.linkTapped(_:)))
         self.donatePhoto.addGestureRecognizer(tapGestureRecognizer)
-        self.donatePhoto.userInteractionEnabled = true
+        self.donatePhoto.isUserInteractionEnabled = true
         //myButton."Restaurant".textAlignment = NSTextAlignment.Center        // Handle the text field’s user input through delegate callbacks.
         
     }
@@ -44,9 +44,9 @@ class ViewController: UIViewController {
     }
 
     //MARK: Actions
-    @IBAction func linkTapped(sender: UITapGestureRecognizer) {
-        if let url = NSURL(string: "https://twitter.com/SFC_JapanGuide") {
-            UIApplication.sharedApplication().openURL(url)
+    @IBAction func linkTapped(_ sender: UITapGestureRecognizer) {
+        if let url = URL(string: "https://twitter.com/SFC_JapanGuide") {
+            UIApplication.shared.openURL(url)
         }
     }
 

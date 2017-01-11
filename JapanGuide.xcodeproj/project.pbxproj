@@ -217,15 +217,18 @@
 					A6957DAE1DB9BACE00FB0B32 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = R393YSTXMM;
+						LastSwiftMigration = 0820;
 					};
 					A6957DC21DB9BACE00FB0B32 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = R393YSTXMM;
+						LastSwiftMigration = 0820;
 						TestTargetID = A6957DAE1DB9BACE00FB0B32;
 					};
 					A6957DCD1DB9BACE00FB0B32 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = R393YSTXMM;
+						LastSwiftMigration = 0820;
 						TestTargetID = A6957DAE1DB9BACE00FB0B32;
 					};
 				};
@@ -434,6 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFC.JapanGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -445,6 +449,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFC.JapanGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -456,6 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFC.JapanGuideTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanGuide.app/JapanGuide";
 			};
 			name = Debug;
@@ -468,6 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFC.JapanGuideTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanGuide.app/JapanGuide";
 			};
 			name = Release;
@@ -479,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFC.JapanGuideUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = JapanGuide;
 				USES_XCTRUNNER = YES;
 			};
@@ -491,6 +499,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SFC.JapanGuideUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = JapanGuide;
 				USES_XCTRUNNER = YES;
 			};

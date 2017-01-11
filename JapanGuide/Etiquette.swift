@@ -11,11 +11,11 @@ import UIKit
 class Etiquette: UIViewController {
 
     //MARK: Properties
-    @IBAction func Restaurant(sender: UIButton) {
-        self.performSegueWithIdentifier("Restaurant", sender: self)
+    @IBAction func Restaurant(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Restaurant", sender: self)
     }
     
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+    @IBAction func unwindToThisViewController(_ segue: UIStoryboardSegue) {
     }
     override func viewDidLoad() {
         super.viewDidLoad()

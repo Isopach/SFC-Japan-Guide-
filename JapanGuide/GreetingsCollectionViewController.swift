@@ -26,11 +26,11 @@ class GreetingsCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "playSound:")
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(GreetingsCollectionViewController.playSound(_:)))
         self.hello.addGestureRecognizer(tapGestureRecognizer)
-        self.hello.userInteractionEnabled = true    }
+        self.hello.isUserInteractionEnabled = true    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,19 +49,19 @@ class GreetingsCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
 
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return 0
     }
 
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
         // Configure the cell
     
@@ -94,19 +94,19 @@ class GreetingsCollectionViewController: UICollectionViewController {
         return false
     }
 */
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
+    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
     }
     
-    @IBAction func playSound(sender: UIImageView) {
+    @IBAction func playSound(_ sender: UIImageView) {
         
-        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/hello", ofType: "wav")
+        let audioFilePath = Bundle.main.path(forResource: "sound/hello", ofType: "wav")
         
         if audioFilePath != nil {
             
-            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            let audioFileUrl = URL(fileURLWithPath: audioFilePath!)
             
-            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
             audioPlayer.play()
             
         }
