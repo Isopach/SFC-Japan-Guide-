@@ -24,7 +24,7 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     //let filename0 = UILabel.String
    // let path = directory0 + filename0
     
-    @IBOutlet weak var pleasehelpme: UILabel!
+    //@IBOutlet weak var pleasehelpme: UILabel!
 
     
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
         self.helpme.addGestureRecognizer(tapGestureRecognizer1)
         self.helpme.isUserInteractionEnabled = true*/
         
-        pleasehelpme.text = "Please help me"
+        //pleasehelpme.text = "Please help me"
 
     }
 
@@ -56,7 +56,7 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
         
             guard let sound = NSDataAsset(name: "soundName") else {
                 print("asset not found")
-                return
+                return 
             }
             
             do {
@@ -126,6 +126,18 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     #keyPath(soundFile.soundName)
     pleasehelpme.valueForKey(#keyPath(soundFile.soundName))*/
     
+    class SoundFile: NSObject {
+        dynamic var soundName: String = ""
+        dynamic var friends: [SoundFile] = []
+        dynamic var bestFriend: SoundFile?
+        
+        init(soundName: String) {
+            self.soundName = soundName
+        }
+    }
+    
+    let pleasehelpme = SoundFile(soundName: "pleasehelpme")
+ // let hello = SoundFile(soundName: "hello")
     
     
     }
