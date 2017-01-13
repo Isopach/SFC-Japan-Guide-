@@ -82,7 +82,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fez-U9-H8Q">
                                 <rect key="frame" x="280" y="104" width="100" height="50"/>
-                                <state key="normal" title="Greetings"/>
+                                <state key="normal" title="Food"/>
                                 <connections>
                                     <action selector="Greetings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YA3-Rc-SOL"/>
                                     <segue destination="1UL-ox-7bn" kind="presentation" identifier="Greetings" id="sZe-z9-xnq"/>
@@ -382,7 +382,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="roh-WI-0bE">
-                                <rect key="frame" x="321" y="95" width="21" height="20"/>
+                                <rect key="frame" x="312" y="96" width="21" height="20"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RLZ-G6-Z5F" appends="YES" id="SKE-KF-S7z"/>
@@ -397,14 +397,61 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please help me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11Z-LH-3vA">
-                                <rect key="frame" x="52" y="308" width="116" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I have an allergy." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11Z-LH-3vA">
+                                <rect key="frame" x="20" y="309" width="127" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please help me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niy-7W-ktR">
-                                <rect key="frame" x="20" y="152" width="116" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What ingredients does this contain?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDu-l2-sT1">
+                                <rect key="frame" x="20" y="338" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is the food Halal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFj-SX-XiH">
+                                <rect key="frame" x="20" y="367" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is there a Vegetarian Menu?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70c-0D-6H5">
+                                <rect key="frame" x="20" y="396" width="213" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is there a Vegan Menu?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkt-Ey-Bkt">
+                                <rect key="frame" x="20" y="425" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="iCs-uh-bNQ">
+                                <rect key="frame" x="147" y="153" width="20" height="20"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Tbk-5d-Rv8" appends="YES" id="gOA-Ea-fVM"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xcS-ae-0mw">
+                                <rect key="frame" x="126" y="182" width="20" height="20"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ZtU-Wd-A8w">
+                                <rect key="frame" x="150" y="210" width="20" height="20"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5Pu-Xe-WoD">
+                                <rect key="frame" x="302" y="339" width="20" height="20"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="CsE-7e-Tgg">
+                                <rect key="frame" x="160" y="368" width="20" height="20"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please help me." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niy-7W-ktR">
+                                <rect key="frame" x="20" y="152" width="121" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -421,12 +468,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="iCs-uh-bNQ">
-                                <rect key="frame" x="144" y="153" width="20" height="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7Pe-2E-guK">
+                                <rect key="frame" x="241" y="397" width="20" height="20"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Tbk-5d-Rv8" appends="YES" id="gOA-Ea-fVM"/>
-                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="T8J-2j-0nd">
+                                <rect key="frame" x="207" y="426" width="20" height="20"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soundIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jkM-Y2-O81">
+                                <rect key="frame" x="152" y="310" width="20" height="20"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -438,10 +490,17 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
+                        <outlet property="allergy" destination="jkM-Y2-O81" id="cKh-Ou-d1d"/>
                         <outlet property="englishmenu" destination="0Po-DS-HMO" id="UKN-h6-VYJ"/>
                         <outlet property="englishstaff" destination="roh-WI-0bE" id="M4h-wu-R2o"/>
+                        <outlet property="givemethis" destination="ZtU-Wd-A8w" id="062-sb-fgC"/>
+                        <outlet property="halal" destination="CsE-7e-Tgg" id="DkP-XT-ro6"/>
                         <outlet property="helpme" destination="iCs-uh-bNQ" id="hbo-ez-j4j"/>
+                        <outlet property="ingredients" destination="5Pu-Xe-WoD" id="EFS-Uj-Y7P"/>
                         <outlet property="pleasehelpme" destination="11Z-LH-3vA" id="Paz-ZI-pdu"/>
+                        <outlet property="vegan" destination="T8J-2j-0nd" id="HQM-2U-3GX"/>
+                        <outlet property="vegetarian" destination="7Pe-2E-guK" id="zhC-ZY-Odu"/>
+                        <outlet property="whatsthis" destination="xcS-ae-0mw" id="8h8-B4-Urt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0FU-7q-UuT" userLabel="First Responder" sceneMemberID="firstResponder"/>

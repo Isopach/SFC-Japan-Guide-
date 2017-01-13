@@ -15,8 +15,17 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
 
     @IBOutlet weak var englishstaff: UIImageView!
     @IBOutlet weak var englishmenu: UIImageView!
-    
     @IBOutlet weak var helpme: UIImageView!
+    @IBOutlet weak var whatsthis: UIImageView!
+    @IBOutlet weak var givemethis: UIImageView!
+    
+    @IBOutlet weak var allergy: UIImageView!
+    @IBOutlet weak var ingredients: UIImageView!
+    @IBOutlet weak var halal: UIImageView!
+    @IBOutlet weak var vegetarian: UIImageView!
+    @IBOutlet weak var vegan: UIImageView!
+    
+    
     var audioPlayer:AVAudioPlayer!
     //var audioName:String!
     
@@ -42,10 +51,33 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
         self.helpme.addGestureRecognizer(tapGestureRecognizer2)
         self.helpme.userInteractionEnabled = true
         
+        let tapGestureRecognizer3 = UITapGestureRecognizer(target: self, action: "whatsthisSound:")
+        self.whatsthis.addGestureRecognizer(tapGestureRecognizer3)
+        self.whatsthis.userInteractionEnabled = true
         
+        let tapGestureRecognizer4 = UITapGestureRecognizer(target: self, action: "givemethisSound:")
+        self.givemethis.addGestureRecognizer(tapGestureRecognizer4)
+        self.givemethis.userInteractionEnabled = true
         
-        //pleasehelpme.text = "Please help me"
-
+        let tapGestureRecognizer5 = UITapGestureRecognizer(target: self, action: "allergySound:")
+        self.allergy.addGestureRecognizer(tapGestureRecognizer5)
+        self.allergy.userInteractionEnabled = true
+        
+        let tapGestureRecognizer6 = UITapGestureRecognizer(target: self, action: "ingredientsSound:")
+        self.ingredients.addGestureRecognizer(tapGestureRecognizer6)
+        self.ingredients.userInteractionEnabled = true
+        
+        let tapGestureRecognizer7 = UITapGestureRecognizer(target: self, action: "halalSound:")
+        self.halal.addGestureRecognizer(tapGestureRecognizer7)
+        self.halal.userInteractionEnabled = true
+        
+        let tapGestureRecognizer8 = UITapGestureRecognizer(target: self, action: "vegetarianSound:")
+        self.vegetarian.addGestureRecognizer(tapGestureRecognizer8)
+        self.vegetarian.userInteractionEnabled = true
+        
+        let tapGestureRecognizer9 = UITapGestureRecognizer(target: self, action: "veganSound:")
+        self.vegan.addGestureRecognizer(tapGestureRecognizer9)
+        self.vegan.userInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,39 +111,75 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     }
     
     @IBAction func helpmeSound(sender: UILabel) {
-        
         let audioFilePath = NSBundle.mainBundle().pathForResource("sound/please help me",ofType: "m4a")
-        
         if audioFilePath != nil {
-            
             let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
-            
             audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
-            audioPlayer.play()
-            
-        }
-        else {
-            
-            print("audio file is not found")
-            
-        }
+            audioPlayer.play()}
+        else {print("audio file is not found")}
     }
     
-    /*
-    Works in Swift 3
-    class soundFile: NSObject {
-        dynamic var soundName: String = ""
-        
-        init(soundName: String)
-        
-        {
-            self.soundName = soundName
-        }
+    @IBAction func whatsthisSound(sender: UILabel) {
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/what is this",ofType: "m4a")
+        if audioFilePath != nil {
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()}
+        else {print("audio file is not found")}
     }
     
-    let pleasehelpme = soundFile(soundName:"pleasehelpme")
-    
-    #keyPath(soundFile.soundName)
-    pleasehelpme.valueForKey(#keyPath(soundFile.soundName))*/
-    
+    @IBAction func givemethisSound(sender: UILabel) {
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/may i have this",ofType: "m4a")
+        if audioFilePath != nil {
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()}
+        else {print("audio file is not found")}
     }
+    
+    @IBAction func allergySound(sender: UILabel) {
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/i have an allergy",ofType: "m4a")
+        if audioFilePath != nil {
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()}
+        else {print("audio file is not found")}
+    }
+    
+    @IBAction func ingredientsSound(sender: UILabel) {
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/what ingredients does this contain",ofType: "m4a")
+        if audioFilePath != nil {
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()}
+        else {print("audio file is not found")}
+    }
+    
+    @IBAction func halalSound(sender: UILabel) {
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/is the food halal",ofType: "m4a")
+        if audioFilePath != nil {
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()}
+        else {print("audio file is not found")}
+    }
+    
+    @IBAction func vegetarianSound(sender: UILabel) {
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/is there a vegetarian menu",ofType: "m4a")
+        if audioFilePath != nil {
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()}
+        else {print("audio file is not found")}
+    }
+    
+    @IBAction func veganSound(sender: UILabel) {
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/do you have a vegan selection",ofType: "m4a")
+        if audioFilePath != nil {
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()}
+        else {print("audio file is not found")}
+    }
+
+}
