@@ -13,8 +13,8 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
 
     //MARK: Properties
 
-    @IBOutlet weak var hello: UIImageView!
-
+    @IBOutlet weak var englishstaff: UIImageView!
+    @IBOutlet weak var englishmenu: UIImageView!
     
     @IBOutlet weak var helpme: UIImageView!
     var audioPlayer:AVAudioPlayer!
@@ -30,15 +30,21 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "playSound:")
-        self.hello.addGestureRecognizer(tapGestureRecognizer)
-        self.hello.userInteractionEnabled = true
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "englishstaffSound:")
+        self.englishstaff.addGestureRecognizer(tapGestureRecognizer)
+        self.englishstaff.userInteractionEnabled = true
         
-        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: "playSound1:")
-        self.helpme.addGestureRecognizer(tapGestureRecognizer1)
+        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: "englishmenuSound:")
+        self.englishmenu.addGestureRecognizer(tapGestureRecognizer1)
+        self.englishmenu.userInteractionEnabled = true
+        
+        let tapGestureRecognizer2 = UITapGestureRecognizer(target: self, action: "helpmeSound:")
+        self.helpme.addGestureRecognizer(tapGestureRecognizer2)
         self.helpme.userInteractionEnabled = true
         
-        pleasehelpme.text = "Please help me"
+        
+        
+        //pleasehelpme.text = "Please help me"
 
     }
 
@@ -54,26 +60,25 @@ class Greetings: UIViewController, AVAudioPlayerDelegate {
     }
     //let audioName:String!
 
-   @IBAction func playSound(sender: UIImageView) {
-    
-    let audioFilePath = NSBundle.mainBundle().pathForResource("sound/hello", ofType: "wav")
-
+   @IBAction func englishstaffSound(sender: UIImageView) {
+    let audioFilePath = NSBundle.mainBundle().pathForResource("sound/is there anyone who speaks english", ofType: "m4a")
     if audioFilePath != nil {
-
         let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
-
         audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
-        audioPlayer.play()
-
-                            }
-    else {
-        
-        print("audio file is not found")
-        
-        }
+        audioPlayer.play()}
+    else {print("audio file is not found")}
     }
     
-    @IBAction func playSound1(sender: UILabel) {
+    @IBAction func englishmenuSound(sender: UIImageView) {
+        let audioFilePath = NSBundle.mainBundle().pathForResource("sound/can i have an english menu", ofType: "m4a")
+        if audioFilePath != nil {
+            let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioFileUrl)
+            audioPlayer.play()}
+        else {print("audio file is not found")}
+    }
+    
+    @IBAction func helpmeSound(sender: UILabel) {
         
         let audioFilePath = NSBundle.mainBundle().pathForResource("sound/please help me",ofType: "m4a")
         
