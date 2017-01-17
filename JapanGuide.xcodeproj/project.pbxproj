@@ -18,6 +18,7 @@
 		A6957DBD1DB9BACE00FB0B32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6957DBB1DB9BACE00FB0B32 /* LaunchScreen.storyboard */; };
 		A6957DC81DB9BACE00FB0B32 /* JapanGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DC71DB9BACE00FB0B32 /* JapanGuideTests.swift */; };
 		A6957DD31DB9BACE00FB0B32 /* JapanGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6957DD21DB9BACE00FB0B32 /* JapanGuideUITests.swift */; };
+		A6AA6A241E2DCD390008EC54 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AA6A231E2DCD390008EC54 /* Maps.swift */; };
 		A6D903FB1DE5385E00EEAB4B /* sound in Resources */ = {isa = PBXBuildFile; fileRef = A6D903FA1DE5385E00EEAB4B /* sound */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		A6957DCE1DB9BACE00FB0B32 /* JapanGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6957DD21DB9BACE00FB0B32 /* JapanGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanGuideUITests.swift; sourceTree = "<group>"; };
 		A6957DD41DB9BACE00FB0B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6AA6A231E2DCD390008EC54 /* Maps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		A6D903FA1DE5385E00EEAB4B /* sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sound; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				A6957DB21DB9BACE00FB0B32 /* AppDelegate.swift */,
 				A6957DB41DB9BACE00FB0B32 /* ViewController.swift */,
 				A6957DB61DB9BACE00FB0B32 /* Main.storyboard */,
+				A6AA6A231E2DCD390008EC54 /* Maps.swift */,
 				A6880C721DEE76E9008582DA /* Etiquette.swift */,
 				A6880C6E1DEE60CD008582DA /* Greetings.swift */,
 				A6441A521DCC260700EB46D8 /* RestaurantEtiquette.swift */,
@@ -285,6 +288,7 @@
 			files = (
 				A6880C6F1DEE60CD008582DA /* Greetings.swift in Sources */,
 				A6957DB51DB9BACE00FB0B32 /* ViewController.swift in Sources */,
+				A6AA6A241E2DCD390008EC54 /* Maps.swift in Sources */,
 				A6441A531DCC260700EB46D8 /* RestaurantEtiquette.swift in Sources */,
 				A6880C731DEE76E9008582DA /* Etiquette.swift in Sources */,
 				A6957DB31DB9BACE00FB0B32 /* AppDelegate.swift in Sources */,
