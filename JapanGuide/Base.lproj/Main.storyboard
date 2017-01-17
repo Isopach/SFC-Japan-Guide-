@@ -82,7 +82,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fez-U9-H8Q">
                                 <rect key="frame" x="280" y="104" width="100" height="50"/>
-                                <state key="normal" title="Food"/>
+                                <state key="normal" title="Phrases"/>
                                 <connections>
                                     <action selector="Greetings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YA3-Rc-SOL"/>
                                     <segue destination="1UL-ox-7bn" kind="presentation" identifier="Greetings" id="sZe-z9-xnq"/>

@@ -10,15 +10,17 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class Maps: UIViewController, CLLocationManagerDelegate {
+class Maps: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     var locationManager : CLLocationManager!
 
     @IBOutlet var maps: MKMapView!
+    //var MyPins: MKPinAnnotationView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.maps.delegate = self
         if (CLLocationManager.locationServicesEnabled())
         {
             locationManager = CLLocationManager()
@@ -27,21 +29,17 @@ class Maps: UIViewController, CLLocationManagerDelegate {
             locationManager.requestAlwaysAuthorization()
             locationManager.startUpdatingLocation()
         }
-    }
+        let tokyoLocation = CLLocationCoordinate2DMake(35.6693873,139.6009526)
+        // Drop a pin
+        let dropPin = MKPointAnnotation()
+        dropPin.coordinate = tokyoLocation
+        dropPin.title = "New York City"
+        maps.addAnnotation(dropPin)    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location = locations.last
-        
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-        
-        self.maps.setRegion(region, animated: true)
-    }
 
 }
