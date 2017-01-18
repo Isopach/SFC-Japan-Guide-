@@ -373,6 +373,9 @@
                                     <segue destination="U6w-jq-oo5" kind="unwind" unwindAction="unwindToThisViewController:" id="ph8-jC-2l3"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tokyoRestaurant1" translatesAutoresizingMaskIntoConstraints="NO" id="F5u-Qx-8dJ">
+                                <rect key="frame" x="20" y="57" width="374" height="614"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -568,5 +571,6 @@
     <resources>
         <image name="donatePhoto" width="201" height="48"/>
         <image name="soundIcon" width="128" height="128"/>
+        <image name="tokyoRestaurant1" width="269" height="379"/>
     </resources>
 </document>
