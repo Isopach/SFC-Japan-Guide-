@@ -210,13 +210,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-tt-GsD">
-                                <rect key="frame" x="20" y="686" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="mvz-rs-qAt" kind="unwind" unwindAction="unwindToThisViewController:" id="a7G-zT-n7S"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Etiquette" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy5-4x-cZw">
                                 <rect key="frame" x="173" y="28" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -231,11 +224,19 @@
                                     <segue destination="tza-6n-SNR" kind="presentation" identifier="Restaurant" id="cBl-Ij-nL6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-tt-GsD">
+                                <rect key="frame" x="190" y="686" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="mvz-rs-qAt" kind="unwind" unwindAction="unwindToThisViewController:" id="a7G-zT-n7S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6o7-tt-GsD" firstAttribute="leading" secondItem="Mbl-F3-6IV" secondAttribute="leadingMargin" constant="20" id="JGA-QK-S9q"/>
                             <constraint firstItem="IPk-HX-Npi" firstAttribute="top" secondItem="6o7-tt-GsD" secondAttribute="bottom" constant="30" id="YIy-o1-tv3"/>
+                            <constraint firstItem="6o7-tt-GsD" firstAttribute="centerX" secondItem="Mbl-F3-6IV" secondAttribute="centerX" id="mc0-WH-j3f"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -276,7 +277,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZA-BT-gns">
-                                <rect key="frame" x="20" y="686" width="34" height="30"/>
+                                <rect key="frame" x="190" y="686" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="mwa-SE-tUO" kind="unwind" unwindAction="unwindToThisViewController:" id="h9G-Ti-1bX"/>
@@ -285,6 +286,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SZA-BT-gns" firstAttribute="centerX" secondItem="BGH-fM-m6P" secondAttribute="centerX" id="eGw-1q-pAd"/>
                             <constraint firstItem="k2z-VZ-Suh" firstAttribute="top" secondItem="SZA-BT-gns" secondAttribute="bottom" constant="30" id="iEI-WM-mjm"/>
                             <constraint firstItem="SZA-BT-gns" firstAttribute="leading" secondItem="BGH-fM-m6P" secondAttribute="leadingMargin" constant="20" id="n1o-PC-xBf"/>
                         </constraints>
@@ -310,13 +312,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JK8-Ju-OiA">
-                                <rect key="frame" x="20" y="686" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="6Oq-FH-6mk" kind="unwind" unwindAction="unwindToThisViewController:" id="Gv6-XW-7Tc"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B9-uY-JAv">
                                 <rect key="frame" x="186" y="28" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -324,12 +319,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NE2-wD-geV">
-                                <rect key="frame" x="20" y="71" width="383" height="598"/>
+                                <rect key="frame" x="12" y="71" width="391" height="598"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JK8-Ju-OiA">
+                                <rect key="frame" x="190" y="686" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="6Oq-FH-6mk" kind="unwind" unwindAction="unwindToThisViewController:" id="Gv6-XW-7Tc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JK8-Ju-OiA" firstAttribute="leading" secondItem="NPc-Ff-e93" secondAttribute="leadingMargin" constant="20" id="4fr-Rv-9ES"/>
+                            <constraint firstItem="JK8-Ju-OiA" firstAttribute="centerX" secondItem="NPc-Ff-e93" secondAttribute="centerX" id="RyM-jW-LtF"/>
                             <constraint firstItem="hcy-nO-Rvo" firstAttribute="top" secondItem="JK8-Ju-OiA" secondAttribute="bottom" constant="30" id="yy5-PX-Ntr"/>
                         </constraints>
                     </view>
@@ -357,21 +360,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-eS-aGx">
-                                <rect key="frame" x="20" y="686" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="U6w-jq-oo5" kind="unwind" unwindAction="unwindToThisViewController:" id="ph8-jC-2l3"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tokyo Restaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y19-D0-iCx">
                                 <rect key="frame" x="136" y="28" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-eS-aGx">
+                                <rect key="frame" x="190" y="686" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="U6w-jq-oo5" kind="unwind" unwindAction="unwindToThisViewController:" id="ph8-jC-2l3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zbm-eS-aGx" firstAttribute="centerX" secondItem="LNa-5O-zgr" secondAttribute="centerX" id="cDi-l9-hKH"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
@@ -399,13 +405,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYq-yY-l0E">
-                                <rect key="frame" x="20" y="686" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="gHE-1J-4oh" kind="unwind" unwindAction="unwindToThisViewController:" id="kMa-WO-UU7"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TP-fz-3EX">
                                 <rect key="frame" x="20" y="64" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -523,11 +522,19 @@
                                 <rect key="frame" x="152" y="310" width="20" height="20"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYq-yY-l0E">
+                                <rect key="frame" x="179" y="686" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="gHE-1J-4oh" kind="unwind" unwindAction="unwindToThisViewController:" id="kMa-WO-UU7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rhz-Pm-bUe" firstAttribute="top" secondItem="SYq-yY-l0E" secondAttribute="bottom" constant="30" id="LDg-9c-1ey"/>
                             <constraint firstItem="SYq-yY-l0E" firstAttribute="leading" secondItem="srF-ch-dyP" secondAttribute="leadingMargin" constant="20" id="UDi-kO-WNW"/>
+                            <constraint firstItem="SYq-yY-l0E" firstAttribute="centerX" secondItem="srF-ch-dyP" secondAttribute="centerX" id="afj-fP-hOc"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
