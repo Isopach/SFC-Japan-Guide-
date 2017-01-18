@@ -11,11 +11,12 @@ import UIKit
 class tokyoRestaurants: UIViewController, UIScrollViewDelegate {
 
 
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+       
         
     }
 
