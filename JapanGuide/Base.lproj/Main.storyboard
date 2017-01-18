@@ -337,12 +337,45 @@
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="maps" destination="NE2-wD-geV" id="TmQ-9I-eg8"/>
+                        <segue destination="WVn-Jx-d6s" kind="show" identifier="tokyoRestaurants" id="lmg-GC-Inw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9a-Fv-PEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6Oq-FH-6mk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1657" y="-254"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U1J-QD-9DW">
+            <objects>
+                <viewController id="WVn-Jx-d6s" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="erJ-2Z-Bpe"/>
+                        <viewControllerLayoutGuide type="bottom" id="ahW-Cy-eTJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LNa-5O-zgr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tokyo Restaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y19-D0-iCx">
+                                <rect key="frame" x="136" y="20" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-eS-aGx">
+                                <rect key="frame" x="20" y="686" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oa8-Bz-qdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1944" y="320"/>
         </scene>
         <!--Greetings-->
         <scene sceneID="8Mf-BZ-7at">

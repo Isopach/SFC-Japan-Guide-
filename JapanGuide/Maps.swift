@@ -15,7 +15,7 @@ class Maps: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     var locationManager : CLLocationManager!
 
     @IBOutlet var maps: MKMapView!
-    //var MyPins: MKPinAnnotationView!
+    var annotation:MKAnnotation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +28,39 @@ class Maps: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.requestAlwaysAuthorization()
             locationManager.startUpdatingLocation()
+            
+            let tokyoLocation = CLLocationCoordinate2DMake(35.6693873,139.6009526)
+            // Drop a pin
+            let tokyoPin = MKPointAnnotation()
+            tokyoPin.coordinate = tokyoLocation
+            tokyoPin.title = "Tokyo"
+            maps.addAnnotation(tokyoPin)    }
+            
+                   }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        var view = mapView.dequeueReusableAnnotationViewWithIdentifier("tokyoPin")
+        if view == nil {
+            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "tokyoPin")
+            view?.canShowCallout = true
+            view?.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+        } else {
+            view?.annotation = annotation
         }
-        let tokyoLocation = CLLocationCoordinate2DMake(35.6693873,139.6009526)
-        // Drop a pin
-        let dropPin = MKPointAnnotation()
-        dropPin.coordinate = tokyoLocation
-        dropPin.title = "New York City"
-        maps.addAnnotation(dropPin)    }
+        return view
+    }
+    
+    var selectedAnnotation: MKPointAnnotation!
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if control == view.rightCalloutAccessoryView {
+            selectedAnnotation = view.annotation as? MKPointAnnotation
+            performSegueWithIdentifier("tokyoRestaurants", sender: self)
+        }
+    }
+    
+    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
