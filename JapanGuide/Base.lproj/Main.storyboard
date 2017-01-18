@@ -345,10 +345,10 @@
             </objects>
             <point key="canvasLocation" x="1657" y="-254"/>
         </scene>
-        <!--View Controller-->
+        <!--Tokyo Restaurants-->
         <scene sceneID="U1J-QD-9DW">
             <objects>
-                <viewController id="WVn-Jx-d6s" sceneMemberID="viewController">
+                <viewController id="WVn-Jx-d6s" customClass="tokyoRestaurants" customModule="JapanGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="erJ-2Z-Bpe"/>
                         <viewControllerLayoutGuide type="bottom" id="ahW-Cy-eTJ"/>
@@ -357,16 +357,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-eS-aGx">
+                                <rect key="frame" x="20" y="686" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="U6w-jq-oo5" kind="unwind" unwindAction="unwindToThisViewController:" id="ph8-jC-2l3"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tokyo Restaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y19-D0-iCx">
-                                <rect key="frame" x="136" y="20" width="142" height="21"/>
+                                <rect key="frame" x="136" y="28" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-eS-aGx">
-                                <rect key="frame" x="20" y="686" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -374,8 +377,9 @@
                     <size key="freeformSize" width="414" height="736"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oa8-Bz-qdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="U6w-jq-oo5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1944" y="320"/>
+            <point key="canvasLocation" x="1761" y="591"/>
         </scene>
         <!--Greetings-->
         <scene sceneID="8Mf-BZ-7at">

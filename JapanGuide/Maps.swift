@@ -38,6 +38,7 @@ class Maps: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
             
                    }
     
+    //Implement viewForAnnotation with button accessory on right
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         var view = mapView.dequeueReusableAnnotationViewWithIdentifier("tokyoPin")
         if view == nil {
@@ -50,8 +51,9 @@ class Maps: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         return view
     }
     
+    //Implement calloutAccessoryControlTapped which (a) captures which annotation was tapped;
     var selectedAnnotation: MKPointAnnotation!
-    
+    //and (b) initiates the segue:
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
             selectedAnnotation = view.annotation as? MKPointAnnotation
