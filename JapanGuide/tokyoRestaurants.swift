@@ -8,12 +8,15 @@
 
 import UIKit
 
-class tokyoRestaurants: UIViewController {
+class tokyoRestaurants: UIViewController, UIScrollViewDelegate {
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
