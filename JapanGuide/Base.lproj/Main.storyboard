@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="width" constant="100" id="BN5-s1-hfe"/>
                                     <constraint firstAttribute="width" constant="46" id="Ybr-AT-Po2"/>
                                 </constraints>
-                                <state key="normal" title="Button D"/>
+                                <state key="normal" title=" "/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Ybr-AT-Po2"/>
@@ -46,11 +46,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Utu-2H-RfY"/>
                                 </constraints>
-                                <state key="normal" title="Button E"/>
+                                <state key="normal" title=" "/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-Bz-Dar">
                                 <rect key="frame" x="280" y="180" width="100" height="50"/>
-                                <state key="normal" title="Button F"/>
+                                <state key="normal" title=" "/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="68" placeholderIntrinsicHeight="52" image="donatePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="wcm-mw-I2Z">
                                 <rect key="frame" x="157" y="634" width="100" height="50"/>
